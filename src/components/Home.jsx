@@ -3,12 +3,14 @@ import { useNavigate } from "react-router-dom";
 
 function Home() {
     const navigate = useNavigate();
+    const API_URL = import.meta.env.VITE_API_URL;
+
 
     return (<div className="home-container">
 
 
         <img
-            src="/images/profile.jpeg"
+            src={`${API_URL}/images/profile.jpeg`}
             alt="Profile"
             className="home-img"
         />
