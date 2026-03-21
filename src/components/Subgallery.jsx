@@ -42,7 +42,7 @@ function Subgallery() {
                         </div>
                     ))
                 ) : (
-                    <p>No designs found</p>
+                    <p>Please Wait !! The Images are Loading...</p>
                 )}
             </div>
         </div>
