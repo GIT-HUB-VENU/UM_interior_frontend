@@ -1,0 +1,93 @@
+.App-Header {
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+  background: #0d3f5c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* logo */
+.App-Header h1 {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.App-Header h1:hover {
+  color: #007bff;
+}
+
+/* nav list */
+.App-Header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+/* links */
+.App-Header ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* hover color */
+.App-Header ul li a:hover {
+  color: #007bff;
+}
+
+/* underline animation */
+.App-Header ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: linear-gradient(135deg, #4a90e2, #007bff);
+  transition: 0.3s ease;
+}
+
+.App-Header ul li a:hover::after {
+  width: 100%;
+}
+
+/* active link (optional if you use NavLink later) */
+.active {
+  color: #007bff;
+}
+
+.active::after {
+  width: 100%;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .App-Header {
+    padding: 0 20px;
+  }
+
+  .App-Header h1 {
+    font-size: 18px;
+  }
+
+  .App-Header ul {
+    gap: 15px;
+  }
+
+  .App-Header ul li a {
+    font-size: 14px;
+  }
+}
