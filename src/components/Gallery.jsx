@@ -41,8 +41,7 @@ function Gallery() {
             />
 
             <div className="card-content">
-              <div className="card-title">{interior.name}</div>
-              <div className="card-price">₹ {interior.price}</div>
+              <div className="card-title">{interior.name}s</div>
               <button
                 className="more-btn"
                 onClick={() => handleMore(interior.name)}

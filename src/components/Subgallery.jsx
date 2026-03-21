@@ -38,7 +38,6 @@ function Subgallery() {
                         <div className="sub-card" key={item._id}>
                             <img src={`${API_URL}${item.image}`} alt={item.name} />
                             <h3>{item.name}</h3>
-                            <p>₹{item.price}</p>
                             <p>{item.desc}</p>
                         </div>
                     ))
