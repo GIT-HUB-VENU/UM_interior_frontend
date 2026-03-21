@@ -21,14 +21,14 @@ function Home() {
             We create elegant and modern interior designs that transform your space into a beautiful living experience.
         </p>
         <p className="home-desc">
-            Discover unique styles, creative ideas, and inspiring designs tailored just for you.
+            Discover unique styles From our creations
         </p>
 
         <button
             className="gallery-btn"
             onClick={() => navigate("/gallery")}
         >
-            Explore Gallery
+            Explore Our Gallery
         </button>
     </div>
     );
