@@ -10,6 +10,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  flex-wrap: wrap;
 }
 
 .icon {
@@ -18,7 +19,6 @@
   font-size: 16px;
 }
 
-/* logo */
 .App-Header h1 {
   font-size: 22px;
   color: #ffffff;
@@ -32,14 +32,12 @@
   color: #007bff;
 }
 
-/* nav list */
 .App-Header ul {
   display: flex;
   gap: 30px;
   list-style: none;
 }
 
-/* links */
 .App-Header ul li a {
   text-decoration: none;
   color: #ffffff;
@@ -49,12 +47,10 @@
   transition: 0.3s ease;
 }
 
-/* hover color */
 .App-Header ul li a:hover {
   color: #007bff;
 }
 
-/* underline animation */
 .App-Header ul li a::after {
   content: "";
   position: absolute;
@@ -70,7 +66,6 @@
   width: 100%;
 }
 
-/* active link (optional if you use NavLink later) */
 .active {
   color: #007bff;
 }
@@ -79,10 +74,11 @@
   width: 100%;
 }
 
-/* responsive */
+/* Tablet */
 @media (max-width: 768px) {
   .App-Header {
-    padding: 0 20px;
+    padding: 10px 20px;
+    height: auto;
   }
 
   .App-Header h1 {
@@ -95,5 +91,25 @@
 
   .App-Header ul li a {
     font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .App-Header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .App-Header ul {
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .App-Header ul li a {
+    font-size: 13px;
   }
 }

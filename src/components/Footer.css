@@ -2,7 +2,24 @@
   background: #1f2d3d;
   color: #ccc;
   text-align: center;
-  padding: 5px;
-  height: 40px;
-  font-size: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .App-Footer {
+    font-size: 13px;
+    padding: 12px 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .App-Footer {
+    font-size: 12px;
+    padding: 14px 8px;
+    line-height: 1.4;
+  }
 }

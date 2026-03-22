@@ -1,11 +1,9 @@
-/* Page Wrapper */
 .gallery-container {
     padding: 40px 60px;
     background: #f4f6f9;
     min-height: 100vh;
 }
 
-/* Title */
 .gallery-title {
     text-align: center;
     font-size: 28px;
@@ -14,20 +12,16 @@
     color: #222;
 }
 
-
-/* Title icon */
 .title-icon {
     margin-right: 8px;
     vertical-align: middle;
 }
 
-/* Button icon */
 .btn-icon {
     margin-left: 6px;
     font-size: 14px;
 }
 
-/* Button alignment */
 .more-btn {
     display: flex;
     align-items: center;
@@ -35,14 +29,13 @@
     gap: 4px;
 }
 
-/* Grid Layout */
+/* Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
 }
 
-/* Card */
 .interior-card {
     background: #fff;
     border-radius: 12px;
@@ -52,25 +45,21 @@
     cursor: pointer;
 }
 
-/* Hover Effect */
 .interior-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Image */
 .interior-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-/* Content */
 .card-content {
     padding: 15px;
 }
 
-/* Product Name */
 .card-title {
     font-size: 18px;
     font-weight: 600;
@@ -78,7 +67,6 @@
     margin-bottom: 8px;
 }
 
-/* Price */
 .card-price {
     font-size: 16px;
     color: #007bff;
@@ -86,7 +74,6 @@
     margin-bottom: 10px;
 }
 
-/* Description */
 .card-desc {
     font-size: 14px;
     color: #666;
@@ -106,30 +93,76 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Hover effect */
 .more-btn:hover {
     background: linear-gradient(135deg, #007bff, #0056b3);
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
-/* Click effect */
 .more-btn:active {
     transform: scale(0.95);
 }
 
-/* Optional: full width button */
 .more-btn.full {
     width: 100%;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
     .gallery-container {
-        padding: 20px;
+        padding: 30px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
     }
 
     .gallery-title {
-        font-size: 22px;
+        font-size: 24px;
+    }
+
+    .interior-card img {
+        height: 180px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .gallery-container {
+        padding: 20px 15px;
+    }
+
+    .gallery-title {
+        font-size: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        /* single column */
+        gap: 15px;
+    }
+
+    .interior-card img {
+        height: 160px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-price {
+        font-size: 14px;
+    }
+
+    .card-desc {
+        font-size: 13px;
+    }
+
+    .more-btn {
+        font-size: 13px;
+        padding: 8px 14px;
     }
 }

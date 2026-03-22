@@ -1,8 +1,8 @@
+/* Container */
 .home-container {
     min-height: 80vh;
     width: 80%;
     margin: 0 auto;
-    /* ✅ THIS LINE FIXES CENTERING */
     padding: 0 20px;
     background: #ffffff;
     display: flex;
@@ -52,21 +52,13 @@
 /* image */
 .home-img {
     width: 200px;
-    /* increased size */
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-
     border: 4px solid #0d3f5c;
-    /* ✅ proper border */
     padding: 5px;
-    /* space between image & border */
     background: #fff;
-    /* makes border look clean */
-
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    /* professional shadow */
-
     transition: all 0.4s ease;
     z-index: 1;
 }
@@ -103,14 +95,13 @@
     color: #222;
 }
 
-/* Heading icon */
+/* icons */
 .home-icon {
     margin-right: 8px;
     color: #007bff;
     vertical-align: middle;
 }
 
-/* Button icon */
 .btn-icon {
     margin-right: 6px;
     font-size: 18px;
@@ -168,7 +159,72 @@
     color: #007bff;
 }
 
-/* active underline */
 .App-Header ul li a.active::after {
     width: 100%;
+}
+
+/* ========================= */
+/* 📱 Tablet (768px) */
+/* ========================= */
+@media (max-width: 768px) {
+    .home-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .home-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .home-container h1 {
+        font-size: 28px;
+    }
+
+    .home-desc {
+        font-size: 16px;
+    }
+
+    .gallery-btn {
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+}
+
+/* ========================= */
+/* 📱 Mobile (480px) */
+/* ========================= */
+@media (max-width: 480px) {
+    .home-container {
+        width: 100%;
+        padding: 15px;
+        gap: 14px;
+    }
+
+    .home-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .home-container h1 {
+        font-size: 22px;
+    }
+
+    .home-desc {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .gallery-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .home-container::before,
+    .home-container::after {
+        width: 250px;
+        height: 250px;
+        filter: blur(80px);
+    }
 }

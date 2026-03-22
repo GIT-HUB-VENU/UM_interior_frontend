@@ -1,3 +1,4 @@
+/* Base Styles */
 .subgallery {
     padding: 30px;
 }
@@ -11,8 +12,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    /* make responsive */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .sub-card {
@@ -33,7 +36,7 @@
 
 .sub-card img {
     width: 100%;
-    height: 200px;
+    height: 80%;
     object-fit: cover;
     display: block;
     cursor: pointer;
@@ -78,4 +81,56 @@
     font-size: 40px;
     color: #fff;
     cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .subgallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .sub-card img {
+        height: 180px;
+    }
+
+    .sub-card h3 {
+        font-size: 16px;
+    }
+
+    .sub-card p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .subgallery {
+        padding: 20px 10px;
+    }
+
+    .subgallery-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+        height: 20%;
+    }
+
+    .sub-card img {
+        height: 80%;
+    }
+
+    .sub-card h3 {
+        font-size: 15px;
+    }
+
+    .sub-card p {
+        font-size: 12px;
+    }
+
+    .close-btn {
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+    }
 }
