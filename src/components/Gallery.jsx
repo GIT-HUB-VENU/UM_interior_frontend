@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./Gallery.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { FaImages, FaArrowRight } from "react-icons/fa";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -19,7 +20,6 @@ function Gallery() {
     fetchInteriors();
   }, []);
 
-  // ✅ Remove duplicates by name
   const uniqueInteriors = Array.from(
     new Map(interiors.map(item => [item.name, item])).values()
   );
@@ -30,7 +30,9 @@ function Gallery() {
 
   return (
     <div className="gallery-container">
-      <h3 className="gallery-title">Interiors Gallery</h3>
+      <h3 className="gallery-title">
+        <FaImages className="title-icon" /> Interiors Gallery
+      </h3>
 
       <div className="gallery-grid">
         {uniqueInteriors.map((interior) => (
@@ -41,12 +43,15 @@ function Gallery() {
             />
 
             <div className="card-content">
-              <div className="card-title">{interior.name}s</div>
+              <div className="card-title">
+                {interior.name}s
+              </div>
+
               <button
                 className="more-btn"
                 onClick={() => handleMore(interior.name)}
               >
-                More
+                More <FaArrowRight className="btn-icon" />
               </button>
             </div>
           </div>

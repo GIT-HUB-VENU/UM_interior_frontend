@@ -14,6 +14,27 @@
     color: #222;
 }
 
+
+/* Title icon */
+.title-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Button icon */
+.btn-icon {
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+/* Button alignment */
+.more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
 /* Grid Layout */
 .gallery-grid {
     display: grid;

@@ -103,6 +103,20 @@
     color: #222;
 }
 
+/* Heading icon */
+.home-icon {
+    margin-right: 8px;
+    color: #007bff;
+    vertical-align: middle;
+}
+
+/* Button icon */
+.btn-icon {
+    margin-right: 6px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
 /* button */
 .gallery-btn {
     margin-top: 20px;
