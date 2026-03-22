@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa"; // Icons
+import { toast } from "react-toastify";
 import "./Login.css"; // Reuse the same CSS for consistency
 
 function Register() {
@@ -24,9 +25,11 @@ function Register() {
             const response = await axios.post(url, { name, email, password });
 
             console.log("Registration successful:", response.data);
+            toast.success("Registration successful!");
             navigate("/login");
         } catch (err) {
             console.error("Registration failed:", err);
+            toast.error("Registration failed! Please try again.");
             setError(err.response?.data?.message || "Registration failed. Please try again.");
         }
     };

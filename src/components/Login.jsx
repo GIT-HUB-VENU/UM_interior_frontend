@@ -3,7 +3,8 @@ import { useContext, useState } from "react";
 import { AppContext } from "../App";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { FaEnvelope, FaLock } from "react-icons/fa"; // Import icons
+import { FaEnvelope, FaLock } from "react-icons/fa";
+import { toast } from "react-toastify";
 import "./Login.css";
 
 function Login() {
@@ -25,15 +26,18 @@ function Login() {
             const response = await axios.post(url, { email, password });
 
             setUser(response.data);
+            toast.success("Login successful!");
             navigate("/");
         } catch (err) {
             console.error("Login failed:", err);
+            toast.error("Login failed! Please try again.");
             setError(err.response?.data?.message || "Login failed. Please try again.");
         }
     };
 
     const handleAdminLogin = () => {
         window.location.href = `${API_URL}/login`;
+        toast.success("Redirecting To Admin Login!");
     };
 
     return (

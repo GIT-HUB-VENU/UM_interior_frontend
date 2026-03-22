@@ -8,6 +8,8 @@ import Gallery from "./components/Gallery";
 import Logout from "./components/Logout";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 
 export const AppContext = createContext();
@@ -36,6 +38,14 @@ function App() {
           <Footer />
         </BrowserRouter>
       </AppContext.Provider>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        pauseOnHover
+      />
     </div>
   );
 }
