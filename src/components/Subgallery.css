@@ -18,6 +18,25 @@
     margin: 0 auto;
 }
 
+.subgallery-header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #0d3f5c;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.title-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 .sub-card {
     background: #fff;
     border-radius: 12px;

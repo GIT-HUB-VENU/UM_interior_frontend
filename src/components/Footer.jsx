@@ -1,9 +1,9 @@
 import './Footer.css'
-function Footer(){
-    return (
+function Footer() {
+  return (
     <div className="App-Footer">
-      <h1>&copy;2023 My Website. All rights reserved.</h1>
+      <h4>&copy;U.M Interiors – Where Design Meets Lifestyle.</h4>
     </div>
-    )
+  )
 }
 export default Footer;

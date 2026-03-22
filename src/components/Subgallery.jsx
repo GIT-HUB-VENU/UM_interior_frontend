@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { FaImages } from "react-icons/fa";
 import "./Subgallery.css";
 
 const API_URL = import.meta.env.VITE_API_URL;
@@ -34,7 +35,7 @@ function Subgallery() {
 
     return (
         <div className="subgallery">
-            <h2>{name} Interiors</h2>
+            <h2 className="subgallery-header"><FaImages className="title-icon" />{name} Interiors</h2>
 
             <div className="subgallery-grid">
                 {loading ? (

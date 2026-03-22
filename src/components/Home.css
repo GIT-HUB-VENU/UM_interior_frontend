@@ -1,10 +1,10 @@
 /* Container */
 .home-container {
-    min-height: 80vh;
-    width: 80%;
+    min-height: 88vh;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    background: #ffffff;
+    background: #f4f6f9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,6 @@
     position: absolute;
     width: 450px;
     height: 450px;
-    background: rgba(74, 144, 226, 0.12);
     border-radius: 50%;
     filter: blur(120px);
     animation: float 10s infinite alternate ease-in-out;

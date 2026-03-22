@@ -9,7 +9,13 @@
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 30px;
-    color: #222;
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #0d3f5c;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .title-icon {

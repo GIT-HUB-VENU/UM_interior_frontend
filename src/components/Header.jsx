@@ -4,15 +4,18 @@ import { AppContext } from "../App";
 import { useContext } from "react";
 import { FaHome, FaImages, FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 
+
 function Header() {
   const { user } = useContext(AppContext);
 
   return (
     <div className="App-Header">
-      <h1>U.M Interiors</h1>
+      <h1 className="main-Header">
+        U.M Interiors
+      </h1>
 
       <ul>
-        <li>
+        <li >
           <NavLink to="/">
             <FaHome className="icon" /> Home
           </NavLink>
