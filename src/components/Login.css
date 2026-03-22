@@ -1,0 +1,151 @@
+/* LOGIN WRAPPER - centered card */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    background: #f4f6f9;
+    padding: 20px;
+}
+
+/* LOGIN CARD */
+.login-card {
+    width: 400px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* TITLE */
+.login-title {
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* ERROR MESSAGE */
+.login-error {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* INPUT FIELDS */
+.login-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.login-input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* BUTTONS */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2c3e50;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #1a252f;
+}
+
+/* ADMIN BUTTON DIFFERENT COLOR */
+.login-btn.admin-btn {
+    background: #2c3e50;
+    ;
+}
+
+.login-btn.admin-btn:hover {
+    background: #1a252f;
+}
+
+/* REGISTER LINK */
+.login-register {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.login-register a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    /* Leave space for icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    /* space for icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .login-card {
+        width: 100%;
+        max-width: 320px;
+        padding: 30px 20px;
+    }
+}
