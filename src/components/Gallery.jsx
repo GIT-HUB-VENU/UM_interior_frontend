@@ -20,6 +20,8 @@ function Gallery() {
     fetchInteriors();
   }, []);
 
+
+
   const uniqueInteriors = Array.from(
     new Map(interiors.map(item => [item.name, item])).values()
   );
